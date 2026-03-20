@@ -38,7 +38,7 @@ public class DownloadBridge {
                 values.put(MediaStore.Downloads.MIME_TYPE,
                         mimeType != null ? mimeType : "application/octet-stream");
                 values.put(MediaStore.Downloads.RELATIVE_PATH,
-                        Environment.DIRECTORY_DOWNLOADS + "/FabiodalezMusic");
+                        Environment.DIRECTORY_DOWNLOADS + "/Monochrome");
                 Uri uri = context.getContentResolver().insert(
                         MediaStore.Downloads.EXTERNAL_CONTENT_URI, values);
                 if (uri != null) {
@@ -51,7 +51,7 @@ public class DownloadBridge {
             } else {
                 java.io.File dir = new java.io.File(
                         Environment.getExternalStoragePublicDirectory(
-                                Environment.DIRECTORY_DOWNLOADS), "FabiodalezMusic");
+                                Environment.DIRECTORY_DOWNLOADS), "Monochrome");
                 dir.mkdirs();
                 java.io.FileOutputStream fos = new java.io.FileOutputStream(
                         new java.io.File(dir, filename));
