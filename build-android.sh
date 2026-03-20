@@ -73,7 +73,7 @@ sed -i '' 's|</body>|<script type="module" src="./js/android-service.js"></scrip
 sed -i '' 's|initial-scale=1.0"|initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no"|' index.html
 
 # 3c. Brand: "Monochrome" → "Fabiodalez" in sidebar logo
-sed -i '' 's|<span>Monochrome</span>|<span>Fabiodalez</span>|' index.html
+sed -i '' 's|<span>Monochrome</span>|<span>Monochrome</span>|' index.html
 
 echo "  ✓ index.html patched (script tag + viewport-fit + brand)."
 
